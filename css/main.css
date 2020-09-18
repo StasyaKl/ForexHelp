@@ -26,12 +26,12 @@ body {
     padding-top: 26px;
     margin-bottom: 40px;
 }
-#header-block #header-logo {
+.logo {
     font-size: 43px;
     font-family: "RobotoBold", sans-serif;
     color: rgba(3, 56, 151, 0.769);
 }
-#header-block #header-logo span {
+.logo span {
     color: rgb(229, 67, 8);
 }
 #header-block #header-text {
@@ -46,7 +46,7 @@ body {
 #header-menu .header-menu-item {
     margin-right: 40px;
 }
-#header-menu .header-menu-item a {
+#header-menu .header-menu-item a  {
     font-size: 14px;
     font-family: "RobotoBold", sans-serif;
     color: rgb(54, 54, 54);
@@ -332,6 +332,10 @@ body {
     color: rgb(54, 54, 54);
     margin-left: 11px;
 }
+#review-container {
+    max-width: 1050px;
+    margin: 0 auto 80px auto;
+}
 #review-title {
     font-size: 45px;
     font-family: "RobotoBold", sans-serif;
@@ -343,7 +347,6 @@ body {
     border-radius: 26px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
-    max-width: 1050px;
     height: 171px;
     margin: 0 auto 20px auto;
     padding: 30px;
@@ -378,4 +381,96 @@ body {
     color: rgb(54, 54, 54);
     line-height: 1.714;
     padding-left: 40px;
+}
+#review-form {
+    border-radius: 26px;
+    box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
+}
+#review-form form {
+    padding: 45px 0;
+}
+#review-form-block-text {
+    margin-right: 32px;
+}
+#review-form-block-text textarea {
+    border-width: 2px;
+    border-color: rgb(182, 181, 181);
+    border-style: solid;
+    border-radius: 22px;
+    width: 683px;
+    height: 253px;
+    margin-bottom: 26px;
+    padding: 24px;
+    font-size: 15px;
+    font-family: "RobotoRegular", sans-serif;
+    color: rgb(24, 24, 24);
+    outline: none;
+}
+#review-form-block-rating #review-form-block-rating-text {
+    margin-right: 51px;
+}
+#review-form-block-rating .review-form-block-rating-star {
+    margin-right: 15px;
+}
+#review-form-action .review-form-action-item {
+    border-radius: 40px;
+    border-width: 1px;
+    border-color: rgb(191, 74, 6);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 280px;
+    margin-bottom: 15px;
+}
+#review-form-action .review-form-action-item input {
+    padding: 14px 23px;
+    border-radius: 40px;
+    border: none;
+    box-sizing: border-box;
+    width: 276px;
+}
+::placeholder {
+    font-size: 15px;
+    font-family: "RobotoRegular", sans-serif;
+    color: rgb(24, 24, 24);
+    line-height: 1;
+}
+#review-form-action .btn {
+    padding: 0;
+}
+#review-form-action .btn button {
+    border-radius: 40px;
+    width: 276px;
+}
+#footer {
+    background-color: rgb(3, 0, 113);
+    box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
+}
+#footer-block {
+    padding: 36px 0;
+}
+#footer .logo {
+    font-size: 30px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgba(255, 255, 255, 0.769);
+}
+#footer-link a {
+    font-size: 14px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+#footer-year {
+    font-size: 14px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(255, 255, 255);
+}
+#footer-text {
+    font-size: 12px;
+    font-family: "RobotoRegular", sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.583;
+    text-align: center;
+    width: 773px;
+    margin: 0 auto;
+    padding-bottom: 22px;
 }
