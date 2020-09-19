@@ -1,0 +1,89 @@
+@media screen and (max-width: 1199px) {
+    #header-container, #company-container, #types-container, #footer-container {
+        padding: 0 20px;
+    }
+    #header-block #header-text {
+        text-align: center;
+    }
+    .company-feature .company-feature-title {
+        padding: 11px 0;
+    }
+    .company-feature ul {
+        padding: 24px 0 24px 31px;
+    }
+    .company-feature {
+        width: 190px;
+        margin: 0 auto;
+    }
+    #company-main-account {
+        margin-right: 23px;
+    }
+    #company-main {
+        padding: 26px 25px 0 25px;
+    }
+    #company-info-block #company-info-block-text {
+        width: 506px;
+    }
+    #company-instruments {
+        max-width: 836px;
+        padding: 24px 45px;
+    }
+    #review-form {
+        margin: 20px;
+    }
+}
+
+/*768-1023*/
+@media screen and (max-width: 1023px) {
+    #company-main {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 630px;
+        justify-content: center;
+    }
+    #company-main-table {
+        margin: 0 auto;
+    }
+    .company-feature {
+        width: 325px;
+        margin: 30px auto;
+    }
+    #company-info {
+        max-width: 630px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 20px;
+    }
+    #company-info-block #company-info-block-title {
+        margin-left: 0;
+    }
+    #company-info-image {
+        margin-top: 20px;
+    }
+    #company-instruments {
+        margin: 0 auto;
+        max-width: 630px;
+        padding: 0;
+    }
+    #tool-container {
+        box-shadow: none;
+    }
+    #tool-container #tool-items .tool-item:nth-child(odd) {
+        margin-right: 0;
+    }
+    #tool-container #tool-items .tool-item {
+        max-width: 385px;
+    }
+    #support-text {
+        max-width: 600px;
+    }
+    #company-instruments #company-instruments-form .row {
+        width: 645px;
+    }
+    #company-instruments #company-instruments-form {
+        width: 615px;
+    }
+}

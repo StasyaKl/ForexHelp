@@ -38,7 +38,6 @@ body {
     font-size: 45px;
     font-family: "RobotoRegular", sans-serif;
     color: rgb(19, 63, 149);
-    line-height: 0;
 }
 #header-menu {
     padding-bottom: 23px;
@@ -58,14 +57,19 @@ body {
 #company {
     margin-top: 72px;
 }
-#company-block {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
-    border-radius: 20px;
-    height: 1200px;
+#header-container, #company-container, #types-container, #footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-#company-block #company-main {
-    padding: 26px 34px 67px 0;
+#company-main {
+    max-width: 930px;
+    padding: 26px 34px 0 57px;
+    box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
+    border-radius: 22px 22px 0 0;
+}
+#company-main-account {
+    max-width: 207px;
+    margin-right: 65px;
 }
 #company-main-account-logo, #company-main-account-action {
     text-align: center;
@@ -96,7 +100,7 @@ body {
     color: rgb(255, 255, 255);
 }
 #company-main-table {
-    padding: 0 15px;
+    padding: 19px 15px 0 15px;
 }
 #company-main-table .row {
     width: 554px;
@@ -121,6 +125,8 @@ body {
 }
 #company-info {
     padding-bottom: 67px;
+    max-width: 930px;
+    box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
 }
 #company-info-block #company-info-block-title {
     font-size: 45px;
@@ -139,6 +145,16 @@ body {
     font-size: 14px;
     font-family: "RobotoBold", sans-serif;
     color: rgb(229, 67, 8);
+}
+#company-info-image {
+    margin-right: 9px;
+}
+#company-instruments {
+    max-width: 930px;
+    padding: 24px 87px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
+    height: 520px;
 }
 #company-instruments #company-instruments-title {
     font-size: 45px;
@@ -186,19 +202,17 @@ body {
 #company-instruments .btn {
     padding: 30px 0 0 0;
 }
-#company ul {
-    list-style-image: url(../images/li.png);
-}
 .company-feature {
-    margin-left: 15px;
+    margin-left: 27px;
     margin-bottom: 24px;
+    width: 256px;
 }
 .company-feature .company-feature-title {
     font-size: 30px;
     font-family: "RobotoBold", sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 11px 69px;
+    padding: 11px 5px;
     background-color: rgb(3, 56, 151);
     border-radius: 20px 20px 0 0;
 }
@@ -210,9 +224,30 @@ body {
 }
 .company-feature ul li {
     margin-bottom: 18px;
+    position: relative;
+    list-style-type: none;
+    font-size: 15px;
+    font-family: "RobotoBold", sans-serif;
+    color: rgb(54, 54, 54);
 }
-.company-feature ul li:last-child {
+.company-feature ul li:last-child, .company-feature .company-feature-text:last-child {
     margin-bottom: 0;
+}
+.company-feature ul li::before {
+    content: url("../images/li.png");
+    position: absolute;
+    top: -2px;
+    left: -28px;
+}
+.company-feature .company-feature-text {
+    font-size: 14px;
+    font-family: "RobotoRegular", sans-serif;
+    color: rgb(54, 54, 54);
+    line-height: 1.714;
+    margin-bottom: 25px;
+}
+.company-feature .company-feature-text:first-child {
+    margin-bottom: 25px;
 }
 #types-title {
     font-size: 40px;
@@ -236,7 +271,6 @@ body {
     border-radius: 25px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
-    max-width: 1200px;
     padding: 30px;
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -347,13 +381,15 @@ body {
     border-radius: 26px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
-    height: 171px;
-    margin: 0 auto 20px auto;
+    margin: 0 20px 20px 20px;
     padding: 30px;
 }
 .review-item .review-item-person {
     padding-right: 40px;
     border-right: 1px solid rgb(182, 181, 181);
+}
+.review-item .review-rating {
+    align-items: flex-end;
 }
 .review-item .review-rating-star {
     margin-right: 12px;
@@ -368,6 +404,13 @@ body {
     font-family: "RobotoBold", sans-serif;
     color: rgb(54, 54, 54);
     margin: 15px 0;
+}
+#finland {
+    width: 31px;
+    height: 19px;
+}
+#finland img {
+    width: 100%;
 }
 .review-item .review-country-text {
     font-size: 14px;
@@ -385,6 +428,7 @@ body {
 #review-form {
     border-radius: 26px;
     box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
+    margin: 20px;
 }
 #review-form form {
     padding: 45px 0;
@@ -397,7 +441,7 @@ body {
     border-color: rgb(182, 181, 181);
     border-style: solid;
     border-radius: 22px;
-    width: 683px;
+    width: 640px;
     height: 253px;
     margin-bottom: 26px;
     padding: 24px;
@@ -408,6 +452,9 @@ body {
 }
 #review-form-block-rating #review-form-block-rating-text {
     margin-right: 51px;
+    font-size: 20px;
+    font-family: "RobotoRegular", sans-serif;
+    color: rgb(54, 54, 54);
 }
 #review-form-block-rating .review-form-block-rating-star {
     margin-right: 15px;
@@ -470,7 +517,7 @@ body {
     color: rgb(255, 255, 255);
     line-height: 1.583;
     text-align: center;
-    width: 773px;
+    max-width: 773px;
     margin: 0 auto;
     padding-bottom: 22px;
 }

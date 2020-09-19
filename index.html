@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>ForexHelp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
 </head>
 <body>
 
 <div id="header">
-    <div class="container">
+    <div id="header-container">
         <div id="header-block" class="d-flex justify-content-between align-items-center">
             <div class="logo">
                 Forex <span>Help!</span>
@@ -36,9 +38,9 @@
 </div>
 
 <div id="company">
-    <div class="container d-flex">
-        <div id="company-block">
-            <div id="company-main" class="d-flex align-items-center">
+    <div id="company-container">
+        <div class="company-block d-flex flex-wrap">
+            <div id="company-main" class="d-flex">
                 <div id="company-main-account">
                     <div id="company-main-account-logo">
                         <img src="images/logo.png" alt="">
@@ -153,6 +155,25 @@
                     </div>
                 </div>
             </div>
+            <div class="company-feature">
+                <div class="company-feature-title">
+                    Benefits
+                </div>
+                <ul>
+                    <li>Bonus offers</li>
+                    <li>Trading contests</li>
+                    <li>Free education</li>
+                    <li>Personal manager</li>
+                    <li>Trading by telephone</li>
+                    <li>Segregated accounts</li>
+                    <li>Managed accounts</li>
+                    <li>Affiliate program</li>
+                    <li>Islamic accounts available</li>
+                    <li>US traders are welcome</li>
+                </ul>
+            </div>
+        </div>
+        <div class="company-block d-flex flex-wrap">
             <div id="company-info" class="d-flex">
                 <div id="company-info-block">
                     <div id="company-info-block-title">
@@ -171,6 +192,19 @@
                     <img src="images/graph.png" alt="">
                 </div>
             </div>
+            <div class="company-feature">
+                <div class="company-feature-title">
+                    Offers
+                </div>
+                <ul>
+                    <li>Free Daily Signals</li>
+                    <li>Free Educational</li>
+                    <li>Daily Fundamental Analysis</li>
+                    <li>Daily Forex News</li>
+                </ul>
+            </div>
+        </div>
+        <div class="company-block d-flex flex-wrap">
             <div id="company-instruments">
                 <div id="company-instruments-title">
                     Trading instruments
@@ -249,65 +283,50 @@
                     <button>Learn More</button>
                 </div>
             </div>
-        </div>
-        <div id="company-features">
-            <div class="company-feature">
-                <div class="company-feature-title">
-                    Benefits
+            <div>
+                <div class="company-feature">
+                    <div class="company-feature-title">
+                        Allows
+                    </div>
+                    <ul>
+                        <li>Hedging</li>
+                        <li>Overnight interest rates</li>
+                        <li>Trailing stop</li>
+                        <li>Pending orders</li>
+                        <li>One-click trading</li>
+                        <li>Mobile trading</li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>Bonus offers</li>
-                    <li>Trading contests</li>
-                    <li>Free education</li>
-                    <li>Personal manager</li>
-                    <li>Trading by telephone</li>
-                    <li>Segregated accounts</li>
-                    <li>Managed accounts</li>
-                    <li>Affiliate program</li>
-                    <li>Islamic accounts available</li>
-                    <li>US traders are welcome</li>
-                </ul>
-            </div>
-            <div class="company-feature">
-                <div class="company-feature-title">
-                    Offers
+                <div class="company-feature">
+                    <div class="company-feature-title">
+                        Payment option
+                    </div>
+                    <ul>
+                        <li>Deposit Methods:</li>
+                        <div class="company-feature-text">
+                            Neteller, Bank Transfer,
+                            Credit/Debit Card, Skrill/
+                            MoneyBookers, Perfect
+                            Money, WebMoney, OkPay,
+                            Qiwi, FasaPay, UnionPay
+                        </div>
+                        <li>Withdrawal Methods:</li>
+                        <div class="company-feature-text">
+                            Neteller, Bank Transfer,
+                            Credit/Debit Card, Skrill/
+                            MoneyBookers, Perfect
+                            Money, WebMoney, OkPay,
+                            Qiwi, FasaPay, UnionPay
+                        </div>
+                    </ul>
                 </div>
-                <ul>
-                    <li>Free Daily Signals</li>
-                    <li>Free Educational</li>
-                    <li>Daily Fundamental Analysis</li>
-                    <li>Daily Forex News</li>
-                </ul>
-            </div>
-            <div class="company-feature">
-                <div class="company-feature-title">
-                    Allows
-                </div>
-                <ul>
-                    <li>Hedging</li>
-                    <li>Overnight interest rates</li>
-                    <li>Trailing stop</li>
-                    <li>Pending orders</li>
-                    <li>One-click trading</li>
-                    <li>Mobile trading</li>
-                </ul>
-            </div>
-            <div class="company-feature">
-                <div class="company-feature-title">
-                    Payment option
-                </div>
-                <ul>
-                    <li>Deposit Methods:</li>
-                    <li>Withdrawal Methods:</li>
-
-                </ul>
             </div>
         </div>
     </div>
 </div>
 
 <div id="types">
-    <div class="container">
+    <div id="types-container">
         <div id="types-title">
             Promotions and Account Types
         </div>
@@ -328,7 +347,8 @@
                         <span>USD</span>.
                     </li>
                     <li>The minimum lot volume is <span>0.0001.</span></li>
-                    <li>You can trade Forex, Spot Metal.</li>
+                    <li>You can trade <img src="images/type1.png"> <span>Forex,</span> <img src="images/type2.png"> Spot
+                        <span>Metal.</span></li>
                 </ul>
             </div>
         </div>
@@ -343,7 +363,10 @@
                     <li>Spreads begin at <span>1.4 pips</span>. Account currency in <span>USD, EUR, and GBP</span></li>
                     <li>The minimum lot volume for this account type is <span>0.01</span></li>
                     <li>Swap-free service upon request, plus the rest of the features listed under cent account.</li>
-                    <li>You can trade Forex, Spot Metals, Cryptocurrency, Indices.</li>
+                    <li>You can trade <img src="images/type1.png"> <span>Forex,</span> <img src="images/type2.png">
+                        <span>Spot Metals,</span> <img src="images/type3.png"> <span>Cryptocurrency,</span> <img
+                                src="images/type4.png"> <span>Indices.</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -361,7 +384,11 @@
                     <li> Traders also get access to personal account managers plus the rest of the features listed under
                         the mini account.
                     </li>
-                    <li>You can trade Forex, Spot Metals, Cryptocurrency, Stocks, Indices.</li>
+                    <li>You can trade <img src="images/type1.png"> <span>Forex,</span> <img src="images/type2.png">
+                        <span>Spot Metals,</span> <img src="images/type3.png"> <span>Cryptocurrency,</span> <img
+                                src="images/type5.png"> <span>Stocks,</span> <img
+                                src="images/type4.png"> <span>Indices.</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -379,7 +406,11 @@
                     <li>Traders of this account type have access to <span>Free VPS</span> plus the rest of the features
                         listed under Standard account.
                     </li>
-                    <li>You can trade Forex, Spot Metals, Cryptocurrency, Stocks, Indices.</li>
+                    <li>You can trade <img src="images/type1.png"> <span>Forex,</span> <img src="images/type2.png">
+                        <span>Spot Metals,</span> <img src="images/type3.png"> <span>Cryptocurrency,</span> <img
+                                src="images/type5.png"> <span>Stocks,</span> <img
+                                src="images/type4.png"> <span>Indices.</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -439,7 +470,7 @@
         Support
     </div>
     <div id="support-text">
-        Traders at PaxForex can contact support via Email, Telephone, Live Chat,<br>
+        Traders at PaxForex can contact support via Email, Telephone, Live Chat,
         or Contact Form. Traders can also contact their personal account manager via phone,
         email, skype and whatsapp.
     </div>
@@ -477,9 +508,9 @@
             Reviews from traders
         </div>
         <div id="review-items">
-            <div class="review-item d-flex">
+            <div class="review-item d-flex justify-content-center">
                 <div class="review-item-person">
-                    <div class="review-rating d-flex  align-items-center">
+                    <div class="review-rating d-flex ">
                         <div class="review-rating-stars d-flex">
                             <div class="review-rating-star">
                                 <img src="images/star1.png" alt="">
@@ -521,9 +552,9 @@
                     glitches so far.
                 </div>
             </div>
-            <div class="review-item d-flex">
+            <div class="review-item d-flex justify-content-center">
                 <div class="review-item-person">
-                    <div class="review-rating d-flex  align-items-center">
+                    <div class="review-rating d-flex ">
                         <div class="review-rating-stars d-flex">
                             <div class="review-rating-star">
                                 <img src="images/star1.png" alt="">
@@ -567,9 +598,9 @@
                     they are very good they answering and help when i need. thanks.
                 </div>
             </div>
-            <div class="review-item d-flex">
+            <div class="review-item d-flex justify-content-center">
                 <div class="review-item-person">
-                    <div class="review-rating d-flex  align-items-center">
+                    <div class="review-rating d-flex ">
                         <div class="review-rating-stars d-flex">
                             <div class="review-rating-star">
                                 <img src="images/star1.png" alt="">
@@ -615,9 +646,9 @@
                     such checks, and the manager helped me.
                 </div>
             </div>
-            <div class="review-item d-flex">
+            <div class="review-item d-flex justify-content-center">
                 <div class="review-item-person">
-                    <div class="review-rating d-flex  align-items-center">
+                    <div class="review-rating d-flex ">
                         <div class="review-rating-stars d-flex">
                             <div class="review-rating-star">
                                 <img src="images/star1.png" alt="">
@@ -665,9 +696,9 @@
                     something happens, will get in touch!
                 </div>
             </div>
-            <div class="review-item d-flex">
+            <div class="review-item d-flex justify-content-center">
                 <div class="review-item-person">
-                    <div class="review-rating d-flex  align-items-center">
+                    <div class="review-rating d-flex ">
                         <div class="review-rating-stars d-flex">
                             <div class="review-rating-star">
                                 <img src="images/star1.png" alt="">
@@ -710,9 +741,9 @@
                     withdrawal. Therefore, I advise you to do it in advance and there will be no problems.
                 </div>
             </div>
-            <div class="review-item d-flex">
+            <div class="review-item d-flex justify-content-center">
                 <div class="review-item-person">
-                    <div class="review-rating d-flex  align-items-center">
+                    <div class="review-rating d-flex ">
                         <div class="review-rating-stars d-flex">
                             <div class="review-rating-star">
                                 <img src="images/star1.png" alt="">
@@ -738,7 +769,7 @@
                         Ioana M.
                     </div>
                     <div class="review-country d-flex align-items-center">
-                        <div class="review-country-image">
+                        <div class="review-country-image" id="finland">
                             <img src="images/country5.png" alt="">
                         </div>
                         <div class="review-country-text">
@@ -755,9 +786,9 @@
                     some money, although I understand that it absurd. Will try with the Standard account.
                 </div>
             </div>
-            <div class="review-item d-flex">
+            <div class="review-item d-flex justify-content-center">
                 <div class="review-item-person">
-                    <div class="review-rating d-flex  align-items-center">
+                    <div class="review-rating d-flex align-items-flex-end">
                         <div class="review-rating-stars d-flex">
                             <div class="review-rating-star">
                                 <img src="images/star1.png" alt="">
@@ -797,9 +828,9 @@
                     satisfied with the service of 100%
                 </div>
             </div>
-            <div class="review-item d-flex">
+            <div class="review-item d-flex justify-content-center">
                 <div class="review-item-person">
-                    <div class="review-rating d-flex  align-items-center">
+                    <div class="review-rating d-flex ">
                         <div class="review-rating-stars d-flex">
                             <div class="review-rating-star">
                                 <img src="images/star1.png" alt="">
@@ -892,7 +923,7 @@
 </div>
 
 <div id="footer">
-    <div class="container">
+    <div id="footer-container">
         <div id="footer-block" class="d-flex justify-content-between align-items-center">
             <div class="logo">
                 Forex<span>Help!</span>
