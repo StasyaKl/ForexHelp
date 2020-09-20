@@ -1,6 +1,6 @@
 @media screen and (max-width: 1199px) {
     #header-container, #company-container, #types-container, #footer-container {
-        padding: 0 20px;
+        padding: 0 12px;
     }
     #header-block #header-text {
         text-align: center;
@@ -12,8 +12,10 @@
         padding: 24px 0 24px 31px;
     }
     .company-feature {
-        width: 190px;
+        width: 220px;
         margin: 0 auto;
+        margin-bottom: 24px;
+        margin-left: 14px;
     }
     #company-main-account {
         margin-right: 23px;
@@ -34,19 +36,19 @@
 }
 
 /*768-1023*/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1092px) {
     #company-main {
         flex-wrap: wrap;
         margin: 0 auto;
         max-width: 630px;
         justify-content: center;
+        border-radius: 22px;
     }
     #company-main-table {
         margin: 0 auto;
     }
     .company-feature {
         width: 325px;
-        margin: 30px auto;
     }
     #company-info {
         max-width: 630px;
@@ -56,6 +58,7 @@
         text-align: center;
         padding-bottom: 50px;
         padding-top: 20px;
+        border-radius: 22px;
     }
     #company-info-block #company-info-block-title {
         margin-left: 0;
@@ -64,9 +67,19 @@
         margin-top: 20px;
     }
     #company-instruments {
-        margin: 0 auto;
         max-width: 630px;
         padding: 0;
+        border-radius: 22px;
+    }
+    .company-feature ul {
+        padding: 24px 0 24px 75px;
+    }
+    #company-instruments #company-instruments-form .row {
+        width: 615px;
+    }
+    #company-instruments #company-instruments-form {
+        width: 615px;
+        margin-left: 22px;
     }
     #tool-container {
         box-shadow: none;
@@ -80,10 +93,263 @@
     #support-text {
         max-width: 600px;
     }
-    #company-instruments #company-instruments-form .row {
-        width: 645px;
+}
+
+/*768-1030*/
+@media screen and (max-width: 1030px) {
+    #review-form-block-text textarea {
+        width: 580px;
     }
-    #company-instruments #company-instruments-form {
-        width: 615px;
+}
+
+/*768-990*/
+@media screen and (max-width: 990px) {
+    .company-feature {
+        margin: 30px auto;
+    }
+    #company-instruments, #company-block-features {
+        margin: 0 auto;
+    }
+}
+
+/*768-990*/
+@media screen and (max-width: 960px) {
+    #review-form-block-text textarea {
+        width: 480px;
+    }
+}
+
+/*768-990*/
+@media screen and (max-width: 880px) {
+    #review-form-block-text textarea {
+        width: 380px;
+    }
+}
+
+/*580-767*/
+@media screen and (max-width: 767px) {
+    #header-block {
+        display: block!important;
+        text-align: center;
+    }
+    #header-block .logo {
+        margin-bottom: 20px;
+    }
+    #company-main, #company-info, #company-instruments {
+        max-width: 560px;
+        box-shadow: none;
+    }
+    #company-instruments #company-instruments-form .row, #company-instruments #company-instruments-form {
+        width: 560px;
+    }
+    #review-form form {
+        display: block!important;
+        margin: 0 auto;
+    }
+    #review-form-block-text textarea {
+        display: none;
+    }
+    #review-form-block-text-hide textarea {
+        display: block;
+        border-width: 1px;
+        border-color: rgb(191, 74, 6);
+        border-style: solid;
+        border-radius: 21px;
+        width: 289px;
+        padding: 24px;
+        font-size: 15px;
+        font-family: "RobotoRegular", sans-serif;
+        color: rgb(24, 24, 24);
+        outline: none;
+        margin-bottom: 15px;
+    }
+    #review-form-action .review-form-action-item input {
+        margin: 0 auto;
+        width: 289px;
+    }
+    #review-form-action .review-form-action-item {
+        width: 290px;
+    }
+    #review-form-block-rating {
+        justify-content: center;
+    }
+    #review-form-action {
+        text-align: -webkit-center;
+        margin-top: 29px;
+    }
+}
+
+/*480-579*/
+@media screen and (max-width: 579px) {
+    #header-container, #company-container, #types-container, #footer-container {
+        padding: 0 15px;
+    }
+    #header-block-burger {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    #header-block .logo {
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    #header-block #header-text {
+        font-size: 35px;
+        padding-bottom: 25px;
+    }
+    #burger {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    #header-menu {
+        display: none!important;
+    }
+    #company {
+        margin-top: 25px;
+    }
+    #company-main, #company-info, #company-instruments {
+        max-width: 300px;
+    }
+    #company-main-table .row {
+        width: 320px;
+    }
+    #company-main-table .row .col-5, #company-main-table .row .col-7 {
+        font-size: 14px;
+    }
+    #company-main-table .row:nth-child(odd) {
+        background-color: rgb(247, 246, 246);
+        height: 25px;
+    }
+    #company-main-table .row:nth-child(even) {
+        background-color: white;
+        height: 50px;
+    }
+    #company-main-account {
+        border-radius: 21px;
+        box-shadow: 0px 8px 54.15px 2.85px rgba(132, 117, 98, 0.11);
+        padding: 20px 50px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    #header .btn {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    #header .btn:last-child {
+        padding-bottom: 0;
+    }
+    #company-main-account-rating {
+        margin: 15px 0 20px 0;
+    }
+    #company-info-block #company-info-block-text {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        width: 320px;
+        margin: 30px 0 0 0;
+    }
+    #company-info-block #company-info-block-title, .company-instruments-title {
+        font-size: 30px;
+    }
+    .company-instruments-text {
+        font-size: 16px;
+    }
+    #company-instruments-hide {
+        display: block;
+        margin: 0 auto;
+    }
+    #company-instruments {
+        display: none!important;
+    }
+    .company-instruments-form .row-image, .company-instruments-form .row-title, .company-instruments-form .row-text {
+        text-align: center;
+    }
+    .company-instruments-form .row-title {
+        font-size: 16px;
+        font-family: "RobotoBold", sans-serif;
+        color: rgb(54, 54, 54);
+        margin: 10px 0;
+    }
+    .company-instruments-form .row-text {
+        font-size: 14px;
+        font-family: "RobotoRegular", sans-serif;
+        color: rgb(54, 54, 54);
+    }
+    .company-instruments-form .align-items-center {
+        display: block;
+        background-color: rgb(247, 246, 246);
+        margin-bottom: 10px;
+        padding: 10px 0;
+    }
+    #types-title, #tool-container #tool-title, #support-title, #review-title {
+        font-size: 30px;
+    }
+    #types-text {
+        font-size: 16px;
+    }
+    .types-item .types-item-title {
+        font-size: 20px;
+    }
+    .types-item ul {
+        padding-left: 0;
+    }
+    .types-item ul li {
+        font-size: 16px;
+        list-style-type: none; /* Скрываем маркеры, отображаемые по умолчанию */
+    }
+    #types li:before {
+        padding-right: 10px; /* Отступ от маркера до текста */
+        content: '';
+        display: inline-block;
+        height:10px;
+        width: 10px;
+        vertical-align: middle;
+        border-radius: 50%;
+        background-color: rgb(6, 4, 90);
+        margin-right: 5px;
+    }
+    #support-text {
+        font-size: 16px;
+        max-width: 390px;
+    }
+    .review-item {
+        display: block!important;
+    }
+    .review-item-person-block {
+        display: flex;
+        justify-content: center;
+    }
+    .review-item .review-item-person {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid rgb(182, 181, 181);
+    }
+    .review-item .review-rating {
+        justify-content: center;
+    }
+    .review-item .review-item-text {
+        padding-left: 0;
+    }
+    .review-item .review-name {
+        margin-right: 15px;
+    }
+    #footer-block {
+        display: block!important;
+        text-align: center;
+    }
+    #footer-link {
+        margin: 17px 0;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #header-block .logo, #header-block #header-text {
+        font-size: 20px;
+    }
+    #company-main-account {
+        padding: 20px 35px;
+        max-width: 290px;
     }
 }
