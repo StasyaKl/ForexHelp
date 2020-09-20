@@ -474,6 +474,7 @@
     #tool-container #tool-items .tool-item {
         padding: 10px;
         border-radius: 0;
+        width: 320px;
     }
     #support-title, #review-title {
         font-size: 20px;
@@ -542,7 +543,7 @@
         right: 40px;
     }
     .company-instruments-form .align-items-center {
-        width: 335px;
+        width: 320px;
         margin: 10px auto;
     }
     #company-image-3 {
@@ -564,5 +565,11 @@
     }
     #company-main-table .row {
         width: 335px;
+    }
+    #tool-container #tool-items .tool-item:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .type-margin {
+        margin-right: 14px;
     }
 }
