@@ -1,10 +1,10 @@
 $(document).ready(() => {
     $('#burger').click(() => {
-        $('#header-menu').show();
+        $('#menu').show();
         $('#burger').hide();
     });
     $('#menu > *').click(() => {
-        $('#header-menu').hide();
+        $('#menu').hide();
         $('#burger').show();
     });
 })

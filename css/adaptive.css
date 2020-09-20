@@ -33,6 +33,9 @@
     #review-form {
         margin: 20px;
     }
+    #review-image {
+        display: none;
+    }
 }
 
 /*768-1023*/
@@ -74,10 +77,10 @@
     .company-feature ul {
         padding: 24px 0 24px 75px;
     }
-    #company-instruments #company-instruments-form .row {
+    #company-instruments .company-instruments-form .row {
         width: 615px;
     }
-    #company-instruments #company-instruments-form {
+    #company-instruments .company-instruments-form {
         width: 615px;
         margin-left: 22px;
     }
@@ -139,7 +142,7 @@
         max-width: 560px;
         box-shadow: none;
     }
-    #company-instruments #company-instruments-form .row, #company-instruments #company-instruments-form {
+    #company-instruments .company-instruments-form .row, #company-instruments .company-instruments-form {
         width: 560px;
     }
     #review-form form {
@@ -177,6 +180,9 @@
         text-align: -webkit-center;
         margin-top: 29px;
     }
+    #support-image-3 {
+        display: none;
+    }
 }
 
 /*480-579*/
@@ -202,6 +208,40 @@
         display: block;
         width: 30px;
         height: 30px;
+    }
+    #menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        padding-top: 75px;
+        top: 0;
+        z-index: 100;
+        right: 0;
+        background-color: rgba(16, 16, 82, 0.85);
+        opacity: 0.8;
+        text-align: center;
+    }
+    #menu svg {
+        display: block;
+        width: 30px;
+        fill: #e54308;
+        opacity: 1;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .main-header-item {
+        margin-bottom: 20px;
+    }
+    .main-header-item a {
+        color: white;
+        font-family: 'RobotoBold', sans-serif;
+        font-size: 20px;
     }
     #header-menu {
         display: none!important;
@@ -342,6 +382,13 @@
     #footer-link {
         margin: 17px 0;
     }
+    #support-image, #support-image-2 {
+        width: 400px;
+        height: 400px;
+    }
+    #support-image img, #support-image-2 img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 479px) {
@@ -351,5 +398,171 @@
     #company-main-account {
         padding: 20px 35px;
         max-width: 290px;
+    }
+    #header-container {
+        background: none;
+    }
+    #company-image {
+        display: none;
+    }
+    #company-main-table {
+        padding-left: 0;
+    }
+    #company-main-table .row .col-5, #company-main-table .row .col-7 {
+        font-size: 12px;
+    }
+    #company-main-table .row .col-5 {
+        padding-left: 25px;
+        flex: 0 0 48.666667%;
+        max-width: 48.666667%;
+    }
+    #company-main-table .row .col-7 {
+        flex: 0 0 50.333333%;
+        max-width: 50.333333%;
+        line-height: 1.417;
+    }
+    #company-info-block #company-info-block-title, .company-instruments-title {
+        text-align: left;
+        font-size: 20px;
+    }
+    .company-feature .company-feature-title {
+        font-size: 20px;
+    }
+    #company-info-block #company-info-block-text {
+        text-align: left;
+    }
+    .company-feature {
+        width: 290px;
+    }
+    .company-instruments-title {
+        text-align: center;
+    }
+    .company-feature ul {
+        padding: 24px 0 24px 60px;
+    }
+    #types {
+        background: none;
+    }
+    #types-container {
+        padding: 0;
+    }
+    #types-title, #tool-container #tool-title {
+        font-size: 20px;
+        width: 150px;
+        margin: 0 auto;
+        line-height: 1.3;
+        padding-top: 0;
+    }
+    #types-text {
+        font-size: 13px;
+        width: 271px;
+    }
+    .types-item {
+        border-radius: 0;
+        padding: 15px;
+    }
+    .types-item ul li {
+        font-size: 12px;
+    }
+    #tool-container #tool-items .tool-item .tool-item-text {
+        height: auto;
+        width: 288px;
+        font-size: 12px;
+        line-height: 1.5;
+        margin: 10px;
+    }
+    #tool-container #tool-items .tool-item {
+        padding: 10px;
+        border-radius: 0;
+    }
+    #support-title, #review-title {
+        font-size: 20px;
+    }
+    #review-title {
+        margin-top: 60px;
+    }
+    #support-text {
+        width: 267px;
+        font-size: 14px;
+    }
+    #support-items .support-item .support-item-text {
+        font-size: 15px;
+    }
+    #support-text {
+        margin-bottom: 30px;
+    }
+    #support-image, #support-image-2 {
+        display: none;
+    }
+    #support-image-3 {
+        right: 18px;
+        top: -90px;
+    }
+    .review-item {
+        padding: 15px;
+        margin: 0 0 10px 0;
+        border-radius: 0;
+    }
+    .review-item .review-item-text {
+        font-size: 12px;
+        font-family: "RobotoRegular", sans-serif;
+        color: rgb(54, 54, 54);
+        line-height: 1.5;
+        text-align: left;
+        width: 276px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    #review-form-block-rating .review-form-block-rating-star {
+        width: 27px;
+        height: 27px;
+    }
+    #review-form-block-rating .review-form-block-rating-star img {
+        width: 100%;
+    }
+    #review-form-block-rating #review-form-block-rating-text {
+        margin-right: 36px;
+    }
+    #review-form {
+        margin: 0;
+        border-radius: 0;
+        margin-top: 20px;
+    }
+    #review-form form {
+        padding: 23px 0;
+    }
+    .types-item ul li {
+        margin-bottom: 13px;
+    }
+    #company-container {
+        padding: 0;
+    }
+    #company-image-2 {
+        top: -25px;
+        right: 40px;
+    }
+    .company-instruments-form .align-items-center {
+        width: 335px;
+        margin: 10px auto;
+    }
+    #company-image-3 {
+        position: absolute;
+        bottom: -30px;
+        left: 20px;
+    }
+    #company-info-block #company-info-block-text, #company-info-block #company-info-block-title {
+        padding-left: 10px;
+    }
+    #company-info-block #company-info-block-text {
+        margin-top: 17px;
+    }
+    #company-info {
+        padding-bottom: 0;
+    }
+    #company {
+        background-position: left center;
+    }
+    #company-main-table .row {
+        width: 335px;
     }
 }
